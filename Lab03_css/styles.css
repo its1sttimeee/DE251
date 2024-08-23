@@ -48,3 +48,8 @@ a {
     font-size: 14px;
     border-radius: 0px;
   }
+
+  .small-text{
+    font-size: 12px;
+    font-weight: lighter ;
+  }
