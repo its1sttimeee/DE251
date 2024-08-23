@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UserInput/title>
+</head>
+<body>
+    <form action="save.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="radio" id="age18" name="age" value="<18"> <label for="age18"><18</label>
+        <input type="radio" id="age19-35" name="age" value="19-35"> <label for="age19-35">19-35</label>
+        <input type="radio" id="age36-48" name="age" value="36-48"> <label for="age36-48">36-48</label>
+        <input type="radio" id="age49" name="age" value=">49"> <label for="age49">>49</label><br><br>
+
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" name="profession" required><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="Thailand">Thailand</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Hong Kong">Hong Kong</option>
+            <option value="China">China</option>
+        </select><br><br>
+
+        <label for="interests">Interests:</label><br>
+        <input type="checkbox" id="interest1" name="interests[]" value="Photography"> <label for="interest1">Photography</label>
+        <input type="checkbox" id="interest2" name="interests[]" value="Music"> <label for="interest2">Music</label>
+        <input type="checkbox" id="interest3" name="interests[]" value="Travel"> <label for="interest3">Travel</label>
+        <input type="checkbox" id="interest4" name="interests[]" value="Gaming"> <label for="interest4">Gaming</label>
+        <input type="checkbox" id="interest5" name="interests[]" value="Reading"> <label for="interest5">Reading</label><br><br>
+
+        <label for="how_found">How did you find out about us:</label>
+        <textarea id="how_found" name="how_found" rows="4" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
