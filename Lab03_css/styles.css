@@ -3,16 +3,19 @@ body{
         background-color: navajowhite;
         font-family: Arial, sans-serif;
         text-align: center;
-        margin: 0;
-        padding: 0;
-    }
     
+    }
+
+header{
+  background-color: #f5de93;
+}
 
 
 h1 {
     font-size: 36px;
     font-weight: bold;
     color: rgb(238, 90, 67);
+    background-color: #f5de93;
 }
 
 h2 {
@@ -31,11 +34,13 @@ p {
     border: 2px solid #f3e4a7;
     margin: 0 auto;
     background-color: rgb(246, 212, 164);
+    font-style: italic;
 }
 
 a {
     text-decoration: none;
     width: fit-content;
+    font-style: talic ;
   }
 
   .colbutton {
@@ -53,3 +58,8 @@ a {
     font-size: 12px;
     font-weight: lighter ;
   }
+
+  .header_link{
+    margin-right: 40px; /* ปรับค่า 20px ตามต้องการ */
+    color: salmon;
+}
