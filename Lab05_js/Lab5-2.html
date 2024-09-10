@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employees Payroll</title>
+    <link rel="stylesheet" href="styless.css" />
+</head>
+
+<body>
+    <script src="web_script.js"></script>
+    <div class="container">
+        <h1>My Sweet Bakery</h1>
+        <h2>Employees Payroll</h2>
+        <form>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" autofocus>
+            <br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName">
+            <br>
+            <label for="hourlySalary">Hourly Salary:</label>
+            <input type="number" id="hourlySalary" name="hourlySalary" step="0.01">
+            <br>
+            <label for="weeklyHours">Weekly Hours:</label>
+            <table>
+                <tr>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                </tr>
+                <tr>
+                    <td><input type="number" name="hours[]" max="8"></td>
+                    <td><input type="number" name="hours[]" max="8"></td>
+                    <td><input type="number" name="hours[]" max="8"></td>
+                    <td><input type="number" name="hours[]" max="8"></td>
+                    <td><input type="number" name="hours[]" max="8"></td>
+                    <td><input type="number" name="hours[]" max="8"></td>
+                    <td><input type="number" name="hours[]" max="8"></td>
+                </tr>
+            </table>
+            <br>
+            <button type="button" onclick="calculate()">Process</button>
+            <button type="reset">Reset</button>
+        </form>
+        <br>
+        <p>Full Name: <span id="fullName"></span></p>
+        <p>Weekly Earnings: <span id="weeklyEarnings"></span></p>
+    </div>
+
+
+</body>
+
+</html>
